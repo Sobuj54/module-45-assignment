@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blogs</title>
+  </head>
+
+  <body class="w-9/12 mx-auto my-7">
+    <div class="border-2 border-pink-800 p-4 rounded-md bg-lime-100">
+      <h3 class="font-bold">
+        1. What is the difference between map() and forEach() and filter() and
+        find() ?
+      </h3>
+      <p>
+        <span class="font-semibold"
+          >Ans: The difference between map() and forEach()</span
+        >:<br />
+        <span class="font-medium">map()</span>: <br />
+        i. The map() method is used to transform the elements of an array.
+        <br />
+        ii. The map() method can be used with other array methods, such as the
+        filter() method. <br />
+        iii. The map() method returns a new array with the transformed elements.
+        <br />
+        <span class="font-medium">forEach():</span> <br />
+        i. The forEach() method is used to loop through the elements of an
+        array. <br />
+        ii. The forEach() method cannot be used with other array methods. <br />
+        iii. The forEach() method returns undefined value. <br />
+        The difference between filter() and find(): <br />
+        <span class="font-medium">filter():</span> <br />
+        i. The filter() method is used to filter all the elements. <br />
+        ii. The filter() method returns the element that matches and removes the
+        element that does not match. <br />
+        iii. The filter() method searches through all the elements. <br />
+        iv. The filter() method does not change the original array. <br />
+        v. The filter() method does not execute the function for empty elements.
+        <br />
+        vi. In filter() method a value is passed to the function as this value.
+        <br />
+        <span class="font-medium">find():</span> <br />
+        i. The find() method is used to find all the descendant elements of the
+        selected element. <br />
+        ii. The find() method finds the element in the DOM tree by traversing
+        through the root to the leaf. <br />
+        iii. The find() method searches through all the child elements only.
+        <br />
+        iv. It does not execute the function for empty elements. v. It does not
+        change the original array. <br />
+        vi. This method returns undefined if no elements are found.
+      </p>
+    </div>
+    <div class="border-2 border-pink-800 p-4 rounded-md mt-4 bg-red-100">
+      <h3 class="font-bold">
+        2. What is the difference between Local Storage and Session Storage and
+        Cookies ?
+      </h3>
+      <p>
+        <span class="font-medium"
+          >Ans: <br />
+          Local Storage:</span
+        >
+        <br />
+        The storage capacity of local storage is 5MB/10MB. As it is not
+        session-based, it must be deleted via javascript or manually. The client
+        can only read local storage.There is no transfer of data to the
+        server.There are fewer old browsers that support it<br />
+        Local storage has 4 methods: <br />
+        i. localStorage.getItem(key) <br />
+        ii. localStorage.removeItem(key) <br />
+        iii. localStorage.clear() <br />
+        iv. localStorage.setItem(key, value) <br />
+        <span class="font-medium">Session Storage:</span> <br />
+        The storage capacity of session storage is 5MB. It’s session-based and
+        works per window or tab. This means that data is stored only for the
+        duration of a session, i.e., until the browser (or tab) is closed. The
+        client can only read local storage. There is no transfer of data to the
+        server. There are fewer old browsers that support it <br />
+        Session Storage has 4 methods: <br />
+        i. sessionStorage.setItem(key, value) <br />
+        ii. sessionStorage.getItem(key) <br />
+        iii. sessionStorage.removeItem(key) <br />
+        iv. sessionStorage.clear() <br />
+        <span class="font-medium">Cookies:</span> <br />
+        The storage capacity of Cookies is 4KB. Cookies expire based on the
+        setting and working per tab and window. Both clients and servers can
+        read and write the cookies. Data transfer to the server is exist. It is
+        supported by all the browser including older browser.
+      </p>
+    </div>
+    <div class="border-2 border-pink-800 p-4 rounded-md mt-4 bg-sky-100">
+      <h3 class="font-bold">
+        3. What is eventLoop ? How does eventLoop work ?
+      </h3>
+      <p>
+        The event loop is the secret behind JavaScript’s asynchronous
+        programming. JS executes all operations on a single thread, but using a
+        few smart data structures, it gives us the illusion of multi-threading.
+        <br />
+        There are some types of event loop: <br />
+        i. setTimeout() <br />
+        ii. setTimeout() <br />
+        iii. push() <br />
+        iv. pop() <br />
+      </p>
+    </div>
+    <div class="border-2 border-pink-800 p-4 rounded-md mt-4 bg-indigo-100">
+      <h3 class="font-bold">
+        4. How does quizTimer function and chooseQuiz function work ?
+      </h3>
+      <p>
+        <span class="font-semibold"
+          >Ans: <br />
+          quizTimer:</span
+        >
+        <br />
+        For managing timer at first we set a timer variable with an arrow
+        function. Then if the count is greater then 60 and if we divided count
+        with 2 there will be no reminder and classList will be remove and add.
+        Else classList remove and add. Then we get the timer id from html and
+        convert time into minute. Then we set minute length if it's equal to 1
+        then it will be sequentially passing and then divided by 60 to convert
+        minute into second and if second length equal to 1 then it will be pass
+        through serially. Then we declare a quizTime variable and an arrow
+        function that if it's dismiss,the timer will return a clear interval.
+        <br />
+        <span class="font-semibold">chooseQuiz:</span> <br />
+        Here chooseQuiz variable with an arrow function and 2 parameter. Then we
+        declare a isExist variable with arrow function to get the quizData from
+        id and find the answer. If the answer data exist it will serial 0. For
+        quiz of answer, if isExist id id equal to quiz id then the answer splice
+        with serial and give the answer and break. Else answer push from
+        quizData. Then declare a displayAnswer variable with answer parameter.
+      </p>
+    </div>
+  </body>
+</html>
